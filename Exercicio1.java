@@ -1,4 +1,5 @@
-public class Program {
+
+class Program {
     public static void main(String[] args) {
         
         Pessoa pessoaObj = new Pessoa("Lourence", 19);
@@ -9,7 +10,7 @@ public class Program {
             System.out.println(pessoaObj.Idade);
     }
 
-    public static class Pessoa {
+    private static class Pessoa {
         public String Nome;
         public int Idade;        
 

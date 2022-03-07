@@ -24,3 +24,25 @@ class Program {
 
     }
 }
+/*
+class Program {
+    public static void main(String[] args) {
+        
+        Pessoa.Check("Lourence", 19);
+
+    }
+
+    static class Pessoa {
+        static String Nome;
+        static int Idade;
+
+        static void Check(String Nome, int Idade) {
+            if (Idade > 20)
+                System.out.println(Nome);
+            else
+                System.out.println(Idade);
+        }
+
+    }
+}
+*/

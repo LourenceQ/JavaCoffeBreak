@@ -29,7 +29,6 @@ class Program {
     public static void main(String[] args) {
         
         Pessoa.Check("Lourence", 19);
-
     }
 
     static class Pessoa {
@@ -42,7 +41,6 @@ class Program {
             else
                 System.out.println(Idade);
         }
-
     }
 }
 */

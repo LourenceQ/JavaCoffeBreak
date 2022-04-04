@@ -38,9 +38,6 @@ public class App {
                 case "7":
                     GetAllAccounts();
                     break;
-                case "C":
-                    System.out.flush();
-                    break;
             }
             
             userOp = GetUserOp();
@@ -156,7 +153,6 @@ public class App {
         System.out.println("[5] - Transferir");
         System.out.println("[6] - Emitir extrato");
         System.out.println("[7] - Visualizar contas");
-        System.out.println("[C] - Limpar tela");
         System.out.println("[X] - Sair");
         System.out.println();
 

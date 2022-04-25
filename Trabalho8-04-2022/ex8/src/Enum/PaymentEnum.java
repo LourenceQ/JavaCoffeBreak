@@ -1,9 +1,9 @@
 package Enum;
 
 public enum PaymentEnum {
-    Dinheiro(0)
-    , Cheque(1)
-    , cCartao (3);
+    dinheiro(0)
+    , cheque(1)
+    , cartao (3);
 
     private final int value;
     PaymentEnum(int v) {
@@ -20,6 +20,6 @@ public enum PaymentEnum {
                 return a;
         }
 
-        return PaymentEnum.Dinheiro;
-    }   
+        return PaymentEnum.dinheiro;
+    }
 }

@@ -1,12 +1,15 @@
 package com.example;
 
 import java.text.DecimalFormat;
+import java.util.ArrayList;
+import java.util.List;
 
 public class BankAccount {
     public String Name;
     public double Balance;
     public AccountType AccType;
     public double Limit;
+    public ArrayList<String> Extract = new ArrayList<String>();
 
     public BankAccount(String name, double balance, AccountType accType) {
         Name = name;
@@ -19,6 +22,23 @@ public class BankAccount {
         Balance = balance;
         AccType = accType;
         Limit = limit;
+    }
+
+    // public BankAccount(String name, double balance, AccountType accType, double limit, List<String> Extract) {
+    //     Name = name;
+    //     Balance = balance;
+    //     AccType = accType;
+    //     Limit = limit;
+    //     Extract = new ArrayList<String>();
+    // }
+
+    public ArrayList<String> SetValues(String action){
+        Extract.add(action);
+        return Extract;
+    }
+
+    public ArrayList<String> GetValues(){        
+        return Extract;
     }
 
     DecimalFormat dFormat = new DecimalFormat("R$ 0.00");
